@@ -12,7 +12,8 @@ function getQuote(e) {
 
     fetch(`https://api.tronalddump.io/random/quote`, {
         headers: {
-            "accept": "application/hal+json"
+            "accept": "application/hal+json",
+            mode: 'no-cors'
         },
     })
         .then(res => res.json())
